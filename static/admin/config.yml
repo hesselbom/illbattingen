@@ -15,12 +15,35 @@ collections:
     folder: "_data/content"
     extension: "json"
     create: true
+    editor:
+      preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
 
+  - name: "home"
+    label: "Home"
+    folder: "_data/home"
+    extension: "json"
+    create: true
     editor:
       preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Background", name: "background", widget: "image"}
+      - label: "Slideshow"
+        name: "slideshow"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+      - label: "Promos"
+        name: "promos"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "markdown"}
 
   - label: "Settings"
     name: "settings"
