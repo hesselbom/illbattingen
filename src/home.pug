@@ -1,5 +1,10 @@
 extends _base.pug
 
+block scripts
+  script(src='https://identity.netlify.com/v1/netlify-identity-widget.js')
+  script.
+    if(window.netlifyIdentity){window.netlifyIdentity.on('init',function(user){if(!user){window.netlifyIdentity.on('login',function(){document.location.href='/admin/'})}})}
+
 block content
   .hero-block
     .image(style=`background-image: url("${data.background}")`)
