@@ -25,7 +25,7 @@ collections:
   - label: "Settings"
     name: "settings"
     files:
-      - label: "Settings_"
+      - label: "Settings"
         name: "settings_"
         file: "settings.json"
         fields:
@@ -39,3 +39,6 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "URL", name: "url", widget: "string"}
+
+        editor:
+          preview: false
