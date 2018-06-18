@@ -23,3 +23,5 @@ body
     img(src='./images/footer.png' alt='illbattingen footer')
 
   script(src='/script.js' async)
+  script.
+    if(window.netlifyIdentity){window.netlifyIdentity.on('init',function(user){if(!user){window.netlifyIdentity.on('login',function(){document.location.href='/admin/'})}})}
