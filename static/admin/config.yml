@@ -25,8 +25,8 @@ collections:
   - label: "Settings"
     name: "settings"
     files:
-      - label: "Settings"
-        name: "settings"
+      - label: "Settings_"
+        name: "settings_"
         file: "settings.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
