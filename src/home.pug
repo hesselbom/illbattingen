@@ -11,7 +11,7 @@ block content
   each promo in data.promos.slice(0, 1)
     article.promo-block
       h2= promo.title
-      p= promo.text
+      | !{markdown(promo.text)}
 
   .slideshow-block
     ul
@@ -22,4 +22,4 @@ block content
   each promo in data.promos.slice(1)
     article.promo-block
       h2= promo.title
-      p= promo.text
+      | !{markdown(promo.text)}

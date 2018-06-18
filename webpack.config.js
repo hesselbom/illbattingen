@@ -3,6 +3,7 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const globImporter = require('node-sass-glob-importer')
+const markdown = require('./markdown')
 
 const prod = process.env.NODE_ENV === 'production'
 
@@ -66,10 +67,11 @@ module.exports = {
             loader: 'pug-html-loader',
             options: {
               callback: ({ resourceQuery }) => {
-                const [_, key] = resourceQuery.match(/\?file=(.*)/)
+                const [, key] = resourceQuery.match(/\?file=(.*)/)
                 const page = pages[key]
                 return {
                   data: {
+                    markdown,
                     settings,
                     prod,
                     data: page.data
