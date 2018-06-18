@@ -4,26 +4,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const globImporter = require('node-sass-glob-importer')
 const markdown = require('./markdown')
+const settings = require('./settings.json')
 
 const prod = process.env.NODE_ENV === 'production'
 
 const extractHtml = new ExtractTextPlugin('[name]')
 const extractStyle = new ExtractTextPlugin('style.css')
-
-// TODO: From a settings file
-const settings = {
-  title: 'Föräldrakooperativet Illbattingen',
-  keywords: 'Illbattingen, Föräldrakooperativ, Kooperativ, Dagis, Förskola, Utby, Göteborg',
-  description: 'Förskolan Illbattingen är ett inarbetat och väl fungerande föräldrakooperativ i hjärtat av Utby.',
-  ogImage: '',
-  background: '/uploads/bg.jpg',
-  menu: [
-    { title: 'Hem', url: '/' },
-    { title: 'Verksamhet', url: '/verksamhet' },
-    { title: 'Personal', url: '/personal' },
-    { title: 'Kontakt', url: '/kontakt' }
-  ]
-}
 
 // Find pages
 const pages = {}

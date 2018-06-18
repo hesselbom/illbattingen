@@ -1,0 +1,12 @@
+{
+  "title": "Föräldrakooperativet Illbattingen",
+  "keywords": "Illbattingen, Föräldrakooperativ, Kooperativ, Dagis, Förskola, Utby, Göteborg",
+  "description": "Förskolan Illbattingen är ett inarbetat och väl fungerande föräldrakooperativ i hjärtat av Utby.",
+  "ogImage": "",
+  "menu": [
+    { "title": "Hem", "url": "/" },
+    { "title": "Verksamhet", "url": "/verksamhet" },
+    { "title": "Personal", "url": "/personal" },
+    { "title": "Kontakt", "url": "/kontakt" }
+  ]
+}

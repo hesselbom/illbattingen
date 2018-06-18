@@ -21,3 +21,21 @@ collections:
 
     editor:
       preview: false
+
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "Settings"
+        name: "settings"
+        file: "settings.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Keywords", name: "keywords", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Share Image", name: "ogImage", widget: "string"}
+          - label: "Menu"
+            name: "menu"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
