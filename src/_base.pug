@@ -1,0 +1,25 @@
+mixin top-header
+  .top-header
+    .inner
+      a(href='/').logo
+        img(src='./images/logo.png' alt='illbattingen logo')
+      ul.menu
+        each item in settings.menu
+          li: a(href=item.url) #{item.title}
+
+doctype html
+head
+  title= settings.title
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='description' content=settings.description)
+  meta(name='keywords' content=settings.keywords)
+  meta(property='og:image' content=settings.ogImage)
+  link(rel='stylesheet' href='/style.css')
+
+body
+  block content
+
+  .footer-block
+    img(src='./images/footer.png' alt='illbattingen footer')
+
+  script(src='/script.js' async)

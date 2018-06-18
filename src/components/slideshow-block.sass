@@ -1,0 +1,51 @@
+.slideshow-block
+  max-width: 70rem
+  margin: 10rem auto 0 auto
+  position: relative
+  overflow: hidden
+  padding-bottom: 10rem
+
+  + article
+    margin-top: 0
+
+  ul
+    list-style: none
+
+  .image
+    display: block
+    padding: 0 4rem
+
+  img
+    display: block
+    max-width: 100%
+    margin: auto
+    box-shadow: 0 1rem 6rem rgba(black, 0.2)
+
+  .tns-outer
+    position: relative
+
+  .tns-controls
+    display: flex
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    align-items: center
+    justify-content: space-between
+    z-index: 10
+    padding: 0 1rem
+
+    button
+      text-indent: -9999px
+      width: 2rem
+      height: 2rem
+      border: 0
+      background: url('./images/caret-down.svg')
+      background-size: contain
+
+    button[data-controls="prev"]
+      transform: rotate(90deg)
+
+    button[data-controls="next"]
+      transform: rotate(-90deg)

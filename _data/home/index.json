@@ -1,0 +1,17 @@
+{
+  "background": "/uploads/bg.jpg",
+  "title": "Välkommen till Illbattingen!",
+  "subtitle": "Förskolan Illbattingen är ett inarbetat och väl fungerande föräldrakooperativ i hjärtat av Utby.",
+  "slideshow": [
+    { "title": "Utelek", "image": "/uploads/slideshow1.jpg" },
+    { "title": "Samling", "image": "/uploads/slideshow2.jpg" },
+    { "title": "Högläsning", "image": "/uploads/slideshow3.jpg" },
+    { "title": "Sandlek", "image": "/uploads/slideshow4.jpg" },
+    { "title": "Pyssel", "image": "/uploads/slideshow5.jpg" },
+    { "title": "Tema", "image": "/uploads/slideshow6.jpg" }
+  ],
+  "promos": [
+    { "title": "Varför Illbattingen?", "text": "Adipisicing quam necessitatibus vero impedit dolorem odit Temporibus quis quos unde optio laboriosam Fugit modi recusandae reiciendis voluptatibus ab optio tempora minima! Eaque sed quia harum unde voluptate. Molestias nisi." },
+    { "title": "Varför inte Illbattingen?", "text": "Elit nemo odio sequi sint cumque! Voluptate quas quae saepe dolor quia, nostrum dolorem. Expedita blanditiis id eius quam cupiditate. Asperiores fuga possimus quos facilis quod Doloremque labore placeat itaque." }
+  ]
+}

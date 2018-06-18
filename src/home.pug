@@ -1,0 +1,25 @@
+extends _base.pug
+
+block content
+  .hero-block
+    .image(style=`background-image: url("${data.background}")`)
+    +top-header
+    .inner
+      h1= data.title
+      p= data.subtitle
+
+  each promo in data.promos.slice(0, 1)
+    article.promo-block
+      h2= promo.title
+      p= promo.text
+
+  .slideshow-block
+    ul
+      each image in data.slideshow
+        li
+          span.image: img(src=image.image)
+
+  each promo in data.promos.slice(1)
+    article.promo-block
+      h2= promo.title
+      p= promo.text
