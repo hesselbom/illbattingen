@@ -6,6 +6,16 @@ block scripts
     if(window.netlifyIdentity){window.netlifyIdentity.on('init',function(user){if(!user){window.netlifyIdentity.on('login',function(){document.location.href='/admin/'})}})}
 
 block content
+  #fb-root
+  script.
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
   .hero-block
     .image(style=`background-image: url("${data.background}")`)
     +top-header
@@ -28,3 +38,8 @@ block content
     article.promo-block
       h2= promo.title
       | !{markdown(promo.text)}
+
+  .fb-block
+    .fb-page(data-href='https://www.facebook.com/Illbattingen' data-tabs='timeline' data-small-header='true' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='false')
+      blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/Illbattingen')
+        a(href='https://www.facebook.com/Illbattingen') Föräldrakooperativet Illbattingen
