@@ -22,4 +22,10 @@ md.renderer.rules.table_open = function (tokens, idx, options, env, self) {
   return self.renderToken(tokens, idx, options)
 }
 
-module.exports = (text) => md.render(text)
+module.exports = (text) => (
+  md.render(text)
+    // Fix image paragraphs
+    .replace(/<p>(<img[^>]*>)<\/p>/g, (_, p1) => (
+      `<p class="image">${p1}</p>`
+    ))
+)
