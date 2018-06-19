@@ -3,7 +3,8 @@ const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const globImporter = require('node-sass-glob-importer')
-const markdown = require('./markdown')
+const markdown = require('./helpers/markdown')
+const idify = require('./helpers/idify')
 const settings = require('./settings.json')
 
 const prod = process.env.NODE_ENV === 'production'
@@ -58,6 +59,7 @@ module.exports = {
                 return {
                   data: {
                     markdown,
+                    idify,
                     settings,
                     prod,
                     data: page.data

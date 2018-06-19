@@ -7,13 +7,13 @@ block content
     h1= data.title
     | !{markdown(data.content)}
 
-  form.form-block
+  form(name='contact' method='POST' netlify).form-block
     each field in data.form
       label
         span.label= field.label
         case field.type
           when 'textarea'
-            textarea(rows='4')
+            textarea(rows='4' name=idify(field.label))
           default
-            input(type='text')
+            input(type='text' name=idify(field.label))
     button(type='submit') Skicka
