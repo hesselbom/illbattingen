@@ -93,7 +93,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Keywords", name: "keywords", widget: "string"}
-          - {label: "Description", name: "description", widget: "string"}
           - {label: "Share Image", name: "ogImage", widget: "string"}
           - label: "Menu"
             name: "menu"
