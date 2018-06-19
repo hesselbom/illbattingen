@@ -13,7 +13,7 @@ block content
         span.label= field.label
         case field.type
           when 'textarea'
-            textarea(rows='4' name=idify(field.label))
+            textarea(rows='4' name=idify(field.label) required=field.required)
           default
-            input(type='text' name=idify(field.label))
+            input(type='text' name=idify(field.label) required=field.required)
     button(type='submit') Skicka
