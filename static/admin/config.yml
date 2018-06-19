@@ -24,7 +24,7 @@ collections:
         name: "meta"
         widget: "list"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Name", name: "name", widget: "select", options: ["title","description","keywords"]}
           - {label: "Content", name: "content", widget: "string"}
 
   - name: "contact"
@@ -48,7 +48,7 @@ collections:
         name: "meta"
         widget: "list"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Name", name: "name", widget: "select", options: ["title","description","keywords"]}
           - {label: "Content", name: "content", widget: "string"}
 
   - name: "home"
@@ -78,7 +78,7 @@ collections:
         name: "meta"
         widget: "list"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Name", name: "name", widget: "select", options: ["title","description","keywords"]}
           - {label: "Content", name: "content", widget: "string"}
 
   - label: "Settings"

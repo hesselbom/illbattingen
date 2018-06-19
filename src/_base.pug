@@ -27,7 +27,7 @@ head
   if !foundTitle
     title= settings.title
 
-  if !foundKeywords
+  if !foundKeywords && settings.keywords
     meta(name='keywords' content=settings.keywords)
 
   meta(property='og:image' content=settings.ogImage)
