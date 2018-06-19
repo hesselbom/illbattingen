@@ -1,0 +1,19 @@
+extends _base.pug
+
+block content
+  +top-header
+
+  .content-block
+    h1= data.title
+    | !{markdown(data.content)}
+
+  form.form-block
+    each field in data.form
+      label
+        span.label= field.label
+        case field.type
+          when 'textarea'
+            textarea(rows='4')
+          default
+            input(type='text')
+    button(type='submit') Skicka

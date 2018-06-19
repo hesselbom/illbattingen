@@ -21,6 +21,23 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
 
+  - name: "contact"
+    label: "Contact"
+    folder: "_data/contact"
+    extension: "json"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Content", name: "content", widget: "markdown"}
+      - label: "Form Fields"
+        name: "form"
+        widget: "list"
+        fields:
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Type", name: "type", widget: "select", options: ["text","textarea"]}
+
   - name: "home"
     label: "Home"
     folder: "_data/home"
