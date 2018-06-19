@@ -9,10 +9,27 @@ mixin top-header
 
 doctype html
 head
-  title= settings.title
   meta(name='viewport' content='width=device-width, initial-scale=1')
-  meta(name='description' content=settings.description)
-  meta(name='keywords' content=settings.keywords)
+
+  - var foundTitle = false
+  - var foundKeywords = false
+  each meta in (data.meta||[])
+    case meta.name
+      when 'title'
+        title= meta.content
+        - foundTitle = true
+      when 'keywords'
+        meta(name=meta.name content=meta.content)
+        - foundKeywords = true
+      default
+        meta(name=meta.name content=meta.content)
+
+  if !foundTitle
+    title= settings.title
+
+  if !foundKeywords
+    meta(name='keywords' content=settings.keywords)
+
   meta(property='og:image' content=settings.ogImage)
   link(rel='stylesheet' href='/style.css')
 

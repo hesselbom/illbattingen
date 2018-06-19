@@ -13,5 +13,8 @@
   "promos": [
     { "title": "Varför Illbattingen?", "text": "Adipisicing quam necessitatibus vero impedit dolorem odit Temporibus quis quos unde optio laboriosam Fugit modi recusandae reiciendis voluptatibus ab optio tempora minima! Eaque sed quia harum unde voluptate. Molestias nisi." },
     { "title": "Varför inte Illbattingen?", "text": "Elit nemo odio sequi sint cumque! Voluptate quas quae saepe dolor quia, nostrum dolorem. Expedita blanditiis id eius quam cupiditate. Asperiores fuga possimus quos facilis quod Doloremque labore placeat itaque." }
+  ],
+  "meta": [
+    { "name": "description", "content": "Förskolan Illbattingen är ett inarbetat och väl fungerande föräldrakooperativ i hjärtat av Utby." }
   ]
 }

@@ -20,6 +20,12 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
+      - label: "Meta Tags"
+        name: "meta"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Content", name: "content", widget: "string"}
 
   - name: "contact"
     label: "Contact"
@@ -38,6 +44,12 @@ collections:
           - {label: "Label", name: "label", widget: "string"}
           - {label: "Type", name: "type", widget: "select", options: ["text","textarea"]}
           - {label: "Required", name: "required", widget: "boolean", default: true}
+      - label: "Meta Tags"
+        name: "meta"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Content", name: "content", widget: "string"}
 
   - name: "home"
     label: "Home"
@@ -62,6 +74,12 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "markdown"}
+      - label: "Meta Tags"
+        name: "meta"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Content", name: "content", widget: "string"}
 
   - label: "Settings"
     name: "settings"

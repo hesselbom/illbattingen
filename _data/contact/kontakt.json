@@ -4,5 +4,8 @@
   "form": [
     { "label": "Namn", "type": "text", "required": true },
     { "label": "Text", "type": "textarea", "required": true }
+  ],
+  "meta": [
+    { "name": "title", "content": "Kontakt" }
   ]
 }
