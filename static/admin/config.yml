@@ -42,8 +42,13 @@ collections:
         widget: "list"
         fields:
           - {label: "Label", name: "label", widget: "string"}
-          - {label: "Type", name: "type", widget: "select", options: ["text","textarea"]}
+          - {label: "Type", name: "type", widget: "select", options: ["text","textarea","dropdown"]}
           - {label: "Required", name: "required", widget: "boolean", default: true}
+          - label: "Options"
+            name: "options"
+            widget: "list"
+            field:
+              - {label: "Title", name: "title", widget: "string"}
       - label: "Meta Tags"
         name: "meta"
         widget: "list"

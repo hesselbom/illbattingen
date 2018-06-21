@@ -40,8 +40,6 @@ module.exports = (text) => {
     return `<a href="${url}" class="text-button">${text}</a>`
   })
 
-  console.log(text)
-
   return md.render(text)
     // Fix image paragraphs
     .replace(/<p>(<img[^>]*>)<\/p>/g, (_, p1) => (
