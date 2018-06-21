@@ -2,10 +2,33 @@
   "title": "Kontakt",
   "content": "Lorem ipsum dolor sit amet jhasgdbqweb qjhweb quhweb qwhebqjhweb qhwe qjwenqjwen qkwjen qiwebj qiwbe iqwjeniqwneiq nweijqnweqnweq\n\nLorem est ullam minus dignissimos ut Cumque at quia voluptatum non similique labore? Autem deserunt eius dignissimos porro odit. Nostrum consequatur molestias enim excepturi eum iste, laborum. In porro libero!",
   "form": [
-    { "label": "Namn", "type": "text", "required": true },
-    { "label": "Text", "type": "textarea", "required": true }
+    {
+      "label": "Namn",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Text",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "label": "Dropdown",
+      "type": "dropdown",
+      "options": [
+        {
+          "title": "Value 1"
+        },
+        {
+          "title": "Value 2"
+        }
+      ]
+    }
   ],
   "meta": [
-    { "name": "title", "content": "Kontakt" }
+    {
+      "name": "title",
+      "content": "Kontakt"
+    }
   ]
 }
