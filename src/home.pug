@@ -21,7 +21,7 @@ block content
     +top-header
     .inner
       h1= data.title
-      p= data.subtitle
+      | !{markdown(data.subtitle)}
 
   each promo in data.promos.slice(0, 1)
     article.promo-block

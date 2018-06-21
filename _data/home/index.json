@@ -1,7 +1,7 @@
 {
   "background": "/uploads/bg.jpg",
   "title": "Välkommen till Illbattingen!",
-  "subtitle": "Förskolan Illbattingen är ett inarbetat och väl fungerande föräldrakooperativ i hjärtat av Utby.",
+  "subtitle": "Förskolan Illbattingen är ett inarbetat och väl fungerande föräldrakooperativ i hjärtat av Utby.\n\n[button text=\"Kontakta oss\" url=\"/kontakt\"]",
   "slideshow": [
     { "title": "Utelek", "image": "/uploads/slideshow1.jpg" },
     { "title": "Samling", "image": "/uploads/slideshow2.jpg" },
