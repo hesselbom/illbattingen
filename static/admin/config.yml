@@ -47,7 +47,7 @@ collections:
           - label: "Options"
             name: "options"
             widget: "list"
-            field:
+            fields:
               - {label: "Title", name: "title", widget: "string"}
       - label: "Meta Tags"
         name: "meta"
