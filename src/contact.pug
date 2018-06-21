@@ -14,6 +14,10 @@ block content
         case field.type
           when 'textarea'
             textarea(rows='4' name=idify(field.label) required=field.required)
+          when 'dropdown'
+            select(name=idify(field.label) required=field.required)
+              each option in field.options
+                option(value=option.title)= option.title
           default
             input(type='text' name=idify(field.label) required=field.required)
     button(type='submit') Skicka
