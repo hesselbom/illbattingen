@@ -35,10 +35,12 @@ const extractProps = (str) => {
 
 module.exports = (text) => {
   // Fix buttons
-  text = text.replace(/\[button([^\]]*)\]/g, (_, p1) => {
+  text = text.replace(/\\?\[button([^\]]*)\]/g, (_, p1) => {
     let {text, url} = extractProps(p1)
     return `<a href="${url}" class="text-button">${text}</a>`
   })
+
+  console.log(text)
 
   return md.render(text)
     // Fix image paragraphs
