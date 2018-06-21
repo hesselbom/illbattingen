@@ -8,42 +8,43 @@ mixin top-header
           li: a(href=item.url) #{item.title}
 
 doctype html
-head
-  meta(name='viewport' content='width=device-width, initial-scale=1')
+html(lang='sv-se')
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1')
 
-  - var foundTitle = false
-  - var foundKeywords = false
-  each meta in (data.meta||[])
-    case meta.name
-      when 'title'
-        title= meta.content
-        - foundTitle = true
-      when 'keywords'
-        meta(name=meta.name content=meta.content)
-        - foundKeywords = true
-      default
-        meta(name=meta.name content=meta.content)
+    - var foundTitle = false
+    - var foundKeywords = false
+    each meta in (data.meta||[])
+      case meta.name
+        when 'title'
+          title= meta.content
+          - foundTitle = true
+        when 'keywords'
+          meta(name=meta.name content=meta.content)
+          - foundKeywords = true
+        default
+          meta(name=meta.name content=meta.content)
 
-  if !foundTitle
-    title= settings.title
+    if !foundTitle
+      title= settings.title
 
-  if !foundKeywords && settings.keywords
-    meta(name='keywords' content=settings.keywords)
+    if !foundKeywords && settings.keywords
+      meta(name='keywords' content=settings.keywords)
 
-  meta(name='theme-color' content='#ffffff')
-  link(rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png')
-  link(rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png')
-  link(rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png')
+    meta(name='theme-color' content='#ffffff')
+    link(rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png')
 
-  meta(property='og:image' content=settings.ogImage)
-  link(rel='stylesheet' href='/style.css')
+    meta(property='og:image' content=settings.ogImage)
+    link(rel='stylesheet' href='/style.css')
 
-body
-  block content
+  body
+    block content
 
-  .footer-block
-    img(src='./images/footer.png' alt='illbattingen footer')
+    .footer-block
+      img(src='./images/footer.png' alt='illbattingen footer')
 
-  script(src='/script.js' async)
+    script(src='/script.js' async)
 
-  block scripts
+    block scripts
