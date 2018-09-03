@@ -1,0 +1,21 @@
+{
+  "title": "Intresseanmälan",
+  "content": "Vad kul att du och din familj är intresserade av att bli en del av gemenskapen som är Illbattingen! \n\nFör att sätta upp ditt barn i kö, fyll i formuläret nedan. Ett litet tips till er med små barn ej fyllda 1 år - eftersom vi ej är en kommunal förskola så kan man ställa sitt barn i kö redan från födseln!\n\nPS. Innan du gör en intresseanmälan, se bara till att du läst vad som \\[buttontext=\"förväntas av dig som förälder på Illbattingen\"&clickurl=\"/verksamhet/medlemsengagemang\"]",
+  "form": [
+    {
+      "label": "Namn",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "meta": [
+    {
+      "name": "title",
+      "content": "Intresseanmälan - Föräldrakooperativet Illbattingen"
+    },
+    {
+      "name": "description",
+      "content": "Är du intresserad av att som förälder kunna påverka ditt barns förskoletid? Då har du kommit rätt! Gör en intresseanmälan till oss på föräldrakooperativet Illbattingen här."
+    }
+  ]
+}
