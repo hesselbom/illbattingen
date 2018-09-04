@@ -1,6 +1,7 @@
 {
   "title": "Kontakt",
-  "content": "Lorem ipsum dolor sit amet jhasgdbqweb qjhweb quhweb qwhebqjhweb qhwe qjwenqjwen qkwjen qiwebj qiwbe iqwjeniqwneiq nweijqnweqnweq\n\nLorem est ullam minus dignissimos ut Cumque at quia voluptatum non similique labore? Autem deserunt eius dignissimos porro odit. Nostrum consequatur molestias enim excepturi eum iste, laborum. In porro libero!",
+  "customUrl": "/kontakt",
+  "content": "Vad kul att du vill komma i kontakt med oss på Illbattingen. Vi tycker alltid det är kul med nya bekantskaper, och svarar gärna på dina funderingar. \n\nNedan skriver du i ditt namn och den fråga du har samt väljer vad frågan handlar om, så ser vi till att rätt person får frågan och återkommer så snart hen kan.",
   "form": [
     {
       "label": "Namn",
@@ -8,19 +9,25 @@
       "required": true
     },
     {
-      "label": "Text",
+      "label": "Fråga",
       "type": "textarea",
       "required": true
     },
     {
-      "label": "Dropdown",
+      "label": "Vad handlar frågan om?",
       "type": "dropdown",
       "options": [
         {
-          "title": "Value 1"
+          "title": "Medlemsengagemang"
         },
         {
-          "title": "Value 2"
+          "title": "Illbattingens pedagogik eller verksamhet"
+        },
+        {
+          "title": "Intresseanmälan och kösystem"
+        },
+        {
+          "title": "Övrig fråga"
         }
       ]
     }
@@ -29,6 +36,10 @@
     {
       "name": "title",
       "content": "Kontakt"
+    },
+    {
+      "name": "description",
+      "content": "Har du en specifik fråga så är detta stället att ställa den på! Här kommer du enklast i kontakt med oss på Illbattingen, och vi ser till att du kommer i kontakt med rätt person på en gång. Fråga på!"
     }
   ]
 }
