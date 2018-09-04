@@ -1,11 +1,97 @@
 {
   "title": "Intresseanmälan",
-  "content": "Vad kul att du och din familj är intresserade av att bli en del av gemenskapen som är Illbattingen! \n\nFör att sätta upp ditt barn i kö, fyll i formuläret nedan. Ett litet tips till er med små barn ej fyllda 1 år - eftersom vi ej är en kommunal förskola så kan man ställa sitt barn i kö redan från födseln!\n\nPS. Innan du gör en intresseanmälan, se bara till att du läst vad som \\[button text=\"förväntas av dig som förälder på Illbattingen\" url=\"/verksamhet/medlemsengagemang\"]",
+  "customUrl": "/kontakt/intresseanmälan",
+  "content": "Vad kul att du och din familj är intresserade av att bli en del av gemenskapen som är Illbattingen! \n\nFör att sätta upp ditt barn i kö, fyll i formuläret nedan. _Ett litet tips till er med små barn ej fyllda 1 år - eftersom vi ej är en kommunal förskola så kan man ställa sitt barn i kö redan från födseln!_\n\n**PS. Innan du gör en intresseanmälan**, se bara till att du läst vad som \\[button text=\"förväntas av dig som förälder på Illbattingen\" url=\"/verksamhet/medlemsengagemang\"]",
   "form": [
     {
-      "label": "Namn",
+      "label": "Barn - Förnamn",
       "type": "text",
       "required": true
+    },
+    {
+      "label": "Barn - Efternamn",
+      "required": true
+    },
+    {
+      "label": "Barn - Personnummer (6 första siffrorna)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Barn - Övrigt",
+      "type": "textarea"
+    },
+    {
+      "label": "Förälder 1 - Förnamn",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Förälder 1 - Efternamn",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Förälder 1 - E-post",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Förälder 1 - Telefon",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Förälder 2 - Förnamn",
+      "type": "text"
+    },
+    {
+      "label": "Förälder 2 - Efternamn",
+      "type": "text",
+      "required": false
+    },
+    {
+      "label": "Förälder 2 - E-post",
+      "type": "text",
+      "required": false
+    },
+    {
+      "label": "Förälder 2 - Telefon",
+      "required": false
+    },
+    {
+      "label": "Adress",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Önskar plats från datumet (YY/MM/DD)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Önskad omfattning",
+      "type": "dropdown",
+      "required": true,
+      "options": [
+        {
+          "title": "Heltid (40h/v)"
+        },
+        {
+          "title": "Deltid (20h/v)"
+        },
+        {
+          "title": "Annat"
+        }
+      ]
+    },
+    {
+      "label": "Om Annat, skriv era önskemål här",
+      "type": "textarea"
+    },
+    {
+      "label": "Övrig information ",
+      "type": "textarea"
     }
   ],
   "meta": [
