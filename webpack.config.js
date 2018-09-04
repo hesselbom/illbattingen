@@ -33,7 +33,9 @@ templates.forEach(template => {
 const entries = {}
 
 Object.keys(pages).forEach(key => {
-  entries[`${key}.html`] = path.resolve(__dirname, 'src', `${pages[key].template}.pug?file=${key}`)
+  const data = pages[key]
+  let url = data.data.customUrl || key
+  entries[`${url}.html`] = path.resolve(__dirname, 'src', `${data.template}.pug?file=${key}`)
 })
 
 module.exports = {
