@@ -4,28 +4,12 @@
   "background": "/uploads/illbattingen.jpg",
   "slideshow": [
     {
-      "title": "Utelek",
-      "image": "/uploads/slideshow1.jpg"
+      "title": "Testimonial - Monica",
+      "image": "/uploads/testi-illbattingen-1.png"
     },
     {
-      "title": "Samling",
-      "image": "/uploads/slideshow2.jpg"
-    },
-    {
-      "title": "Högläsning",
-      "image": "/uploads/slideshow3.jpg"
-    },
-    {
-      "title": "Sandlek",
-      "image": "/uploads/slideshow4.jpg"
-    },
-    {
-      "title": "Pyssel",
-      "image": "/uploads/slideshow5.jpg"
-    },
-    {
-      "title": "Tema",
-      "image": "/uploads/slideshow6.jpg"
+      "title": "Testimonial - Anna",
+      "image": "/uploads/testi-illbattingen-2.png"
     }
   ],
   "promos": [
