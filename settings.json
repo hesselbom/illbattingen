@@ -18,6 +18,10 @@
     {
       "title": "Kontakt",
       "url": "/kontakt"
+    },
+    {
+      "title": "Intresseanmälan",
+      "url": "/kontakt/intresseanmalan"
     }
   ]
 }
