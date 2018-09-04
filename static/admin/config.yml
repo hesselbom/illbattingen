@@ -19,7 +19,7 @@ collections:
       preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Custom URL", name: "customUrl", widget: "string"}
+      - {label: "Custom URL", name: "customUrl", widget: "string", hint: "Not required. Overrides default URL with a custom URL."}
       - {label: "Content", name: "content", widget: "markdown"}
       - label: "Meta Tags"
         name: "meta"
@@ -37,7 +37,7 @@ collections:
       preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Custom URL", name: "customUrl", widget: "string"}
+      - {label: "Custom URL", name: "customUrl", widget: "string", hint: "Not required. Overrides default URL with a custom URL."}
       - {label: "Content", name: "content", widget: "markdown"}
       - label: "Form Fields"
         name: "form"
