@@ -1,7 +1,7 @@
 {
   "title": "Intresseanmälan",
   "customUrl": "/kontakt/intresseanmalan",
-  "content": "Vad kul att du och din familj är intresserade av att bli en del av gemenskapen som är Illbattingen! \n\nFör att sätta upp ditt barn i kö, fyll i formuläret nedan. _Ett litet tips till er med små barn ej fyllda 1 år - eftersom vi ej är en kommunal förskola så kan man ställa sitt barn i kö redan från födseln!_\n\nHar du frågor om Illbattingens kösystem? Skicka din fråga till <a href=\"mailto:chef@illbattingen.se\">chef@illbattingen.se</a> chef@illbattingen.se\n\n**PS. Innan du gör en intresseanmälan**, se bara till att du läst vad som \\[button text=\"förväntas av dig som förälder på Illbattingen\" url=\"/verksamhet/medlemsengagemang\"]",
+  "content": "Vad kul att du och din familj är intresserade av att bli en del av gemenskapen som är Illbattingen! \n\nFör att sätta upp ditt barn i kö, fyll i formuläret nedan. _Ett litet tips till er med små barn ej fyllda 1 år - eftersom vi ej är en kommunal förskola så kan man ställa sitt barn i kö redan från födseln!_\n\nHar du frågor om Illbattingens kösystem? Skicka din fråga till <a href=\"mailto:chef@illbattingen.se\">chef@illbattingen.se</a> chef@illbattingen.se\n\n**PS. Innan du gör en intresseanmälan**, se bara till att du läst \\[button text=\"vad som förväntas av dig som förälder på Illbattingen\" url=\"/verksamhet/medlemsengagemang\"]",
   "form": [
     {
       "label": "Barn - Förnamn",
