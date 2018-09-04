@@ -44,7 +44,8 @@ module.exports = {
     'script.js': path.resolve(__dirname, 'src/index.js')
   },
   output: {
-    filename: '[name]'
+    filename: '[name]',
+    publicPath: '/'
   },
   module: {
     rules: [
