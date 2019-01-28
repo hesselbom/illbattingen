@@ -39,6 +39,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Custom URL", name: "customUrl", widget: "string", hint: "Not required. Overrides default URL with a custom URL."}
       - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Form Id", name: "formId", widget: "string", hint: "Use a different id than 'contact' if you want to separate forms", default: "contact"}
       - label: "Form Fields"
         name: "form"
         widget: "list"

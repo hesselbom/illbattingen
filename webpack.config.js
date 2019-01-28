@@ -35,6 +35,7 @@ const entries = {}
 Object.keys(pages).forEach(key => {
   const data = pages[key]
   let url = data.data.customUrl || key
+  if (url.charAt(0) === '/') url = url.substr(1)
   entries[`${url}.html`] = path.resolve(__dirname, 'src', `${data.template}.pug?file=${key}`)
 })
 
