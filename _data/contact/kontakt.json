@@ -1,7 +1,7 @@
 {
   "title": "Kontakt",
   "customUrl": "/kontakt",
-  "content": "![dörr stuckatur på illbattingen](/uploads/_dsc9245-12.jpg)\n\nVad kul att du vill komma i kontakt med oss på Illbattingen! Vi tycker alltid det är kul med nya bekantskaper, och svarar gärna på dina funderingar. \n\nEnklaste sättet att få ett svar från oss är via kontaktformuläret på denna sida, men om det är något brådskande så går det också att nå oss under ordinarie öppettider på **031-26 26 69**.\n\nSå om det inte är superbrådskande skriver du i ditt namn och den fråga du har nedan samt väljer vad frågan handlar om, så ser vi till att rätt person får frågan och återkommer så snart hen kan.",
+  "content": "![dörr stuckatur på illbattingen](/uploads/_dsc9245-12.jpg \"Illbattingen\")\n\nVad kul att du vill komma i kontakt med oss på Illbattingen! Vi tycker alltid det är kul med nya bekantskaper, och svarar gärna på dina funderingar. \n\nEnklaste sättet att få ett svar från oss är via kontaktformuläret på denna sida, men om det är något brådskande så går det också att nå oss under ordinarie öppettider på **031-26 26 69**.\n\nSå om det inte är superbrådskande skriver du i ditt namn och den fråga du har nedan samt väljer vad frågan handlar om, så ser vi till att rätt person får frågan och återkommer så snart hen kan.",
   "formId": "contact",
   "form": [
     {
@@ -17,6 +17,7 @@
     {
       "label": "Vad handlar frågan om?",
       "type": "dropdown",
+      "required": true,
       "options": [
         {
           "title": "Medlemsengagemang"
